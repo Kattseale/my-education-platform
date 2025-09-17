@@ -100,8 +100,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Phone</h3>
-                      <p className="text-muted-foreground">+27 (0) 11 123 4567</p>
-                      <p className="text-muted-foreground">+27 (0) 82 987 6543</p>
+                      <p className="text-muted-foreground">+27 (0) 68 721 1598</p>
                     </div>
                   </div>
 
@@ -112,7 +111,6 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Email</h3>
                       <p className="text-muted-foreground">info@myeduc.co.za</p>
-                      <p className="text-muted-foreground">programs@myeduc.co.za</p>
                     </div>
                   </div>
 
@@ -122,8 +120,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Address</h3>
-                      <p className="text-muted-foreground">123 Education Street</p>
-                      <p className="text-muted-foreground">Johannesburg, 2000</p>
+                      <p className="text-muted-foreground">Corner Central Road and Lilian Ngoyi Street</p>
+                      <p className="text-muted-foreground">Johannesburg, 2092</p>
                       <p className="text-muted-foreground">South Africa</p>
                     </div>
                   </div>

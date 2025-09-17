@@ -389,7 +389,7 @@ export default function HomePage() {
               <div className="space-y-3 text-muted-foreground">
                 <div className="flex items-center gap-2">
                   <Phone className="w-4 h-4" />
-                  <span>+27 (0) 11 123 4567</span>
+                  <span>+27 (0) 86 721 1598</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="w-4 h-4" />
