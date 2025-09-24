@@ -152,13 +152,7 @@ export default function Navigation() {
               <div className="py-2">
                 <div className="font-semibold text-foreground text-sm mb-2">Our Services</div>
                 <div className="ml-4 space-y-2">
-                  <Link
-                    href="/teacher-portal"
-                    className="block text-sm text-muted-foreground hover:text-primary transition-colors py-2"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Careers
-                  </Link>
+
                   <Link
                     href="/student-admission"
                     className="block text-sm text-muted-foreground hover:text-primary transition-colors py-2"
@@ -181,6 +175,14 @@ export default function Navigation() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 FAQ's
+              </Link>
+
+              <Link
+                href="/teacher-portal"
+                className="block text-sm font-semibold  text-foreground hover:text-primary transition-colors py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Careers
               </Link>
               <Link
                 href="/contact"
