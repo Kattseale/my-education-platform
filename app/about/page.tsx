@@ -1,8 +1,10 @@
+import Image from "next/image"
 import Navigation from "@/components/navigation"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { GraduationCap, Users, Award, Heart, Target, Building2, CheckCircle, ArrowRight } from "lucide-react"
+
 
 export default function AboutPage() {
   return (
@@ -211,46 +213,27 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Partnerships & Accreditations */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-6">Partnerships & Accreditations</h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              We work with leading educational institutions and maintain high standards through official accreditations
-            </p>
-          </div>
+      {/* Partnerships */}
+<section className="py-20 bg-background">
+  <div className="container mx-auto px-4">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl font-bold text-foreground mb-6">Partnerships</h2>
+      <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+        We work with leading educational institutions and maintain strong partnerships.
+      </p>
+    </div>
 
+    <div className="mb-12 flex flex-wrap items-center justify-center gap-8">
+      <Image src="/Partners/anor.jfif" alt="Anor logo" width={120} height={60} className="h-16 w-auto object-contain" />
+      <Image src="/Partners/henpro.png" alt="Henpro logo" width={120} height={60} className="h-16 w-auto object-contain" />
+      <Image src="/Partners/vicP.jpg" alt="VicP logo" width={120} height={60} className="h-16 w-auto object-contain" />
+      <Image src="/Partners/rain.jpg" alt="Rain logo" width={120} height={60} className="h-16 w-auto object-contain" />
+      <Image src="/Partners/answ.jpg" alt="Answ logo" width={120} height={60} className="h-16 w-auto object-contain" />
+      <Image src="/Partners/tas.jpg" alt="Tas logo" width={120} height={60} className="h-16 w-auto object-contain" />
+    </div>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <Card className="border-2 border-border">
-              <CardHeader>
-                <div className="w-16 h-16 bg-primary/10 border border-primary/20 rounded-lg flex items-center justify-center mb-4">
-                  <Award className="w-8 h-8 text-primary" />
-                </div>
-                <CardTitle className="text-xl font-bold">Official Accreditations</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                    Department of Basic Education recognition
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                    SAQA registered qualifications
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                    NQF Level 4 & 5 certification authority
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                    NPO registration and compliance
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-
+            
+          <div className="max-w-2xl mx-auto">
             <Card className="border-2 border-border">
               <CardHeader>
                 <div className="w-16 h-16 bg-secondary/10 border border-secondary/20 rounded-lg flex items-center justify-center mb-4">
@@ -310,5 +293,7 @@ export default function AboutPage() {
         </div>
       </section>
     </div>
-  )
-}
+  );
+  }
+
+  
