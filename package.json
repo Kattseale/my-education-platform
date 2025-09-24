@@ -1,7 +1,8 @@
 {
-  "name": "my-v0-project",
+  "name": "my-education",
   "version": "0.1.0",
   "private": true,
+  "author": {"name": "Katlego Seale"},
   "scripts": {
     "build": "next build",
     "dev": "next dev",
@@ -37,6 +38,7 @@
     "@radix-ui/react-toggle": "1.1.1",
     "@radix-ui/react-toggle-group": "1.1.1",
     "@radix-ui/react-tooltip": "1.1.6",
+    "@supabase/supabase-js": "^2.57.4",
     "@vercel/analytics": "latest",
     "autoprefixer": "^10.4.20",
     "class-variance-authority": "^0.7.1",
