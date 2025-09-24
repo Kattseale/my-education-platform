@@ -17,6 +17,7 @@ export default function StudentAdmissionPage() {
   const [relationship, setRelationship] = useState("")
   const formRef = useRef<HTMLFormElement>(null)
 
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setIsSubmitting(true)
@@ -53,7 +54,6 @@ export default function StudentAdmissionPage() {
 
       if (response.ok) {
         setIsSubmitted(true)
-        // e.currentTarget.reset()
         setGradeApplying("")
         setAcademicYear("")
         setRelationship("")
@@ -61,11 +61,11 @@ export default function StudentAdmissionPage() {
       } else {
         const error = await response.json()
         console.error('Application submission failed:', error)
-        alert('Failed to submit application. Please try again.')
+        // alert('Failed to submit application. Please try again.')
       }
     } catch (error) {
       console.error('Application submission error:', error)
-      alert('Failed to submit application. Please try again.')
+      // alert('Failed to submit application. Please try again.')
     } finally {
       setIsSubmitting(false)
     }
