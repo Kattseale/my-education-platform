@@ -213,6 +213,7 @@ export default function AboutPage() {
       </section>
 
       {/* Partnerships */}
+<<<<<<< HEAD
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -221,6 +222,16 @@ export default function AboutPage() {
               We work with leading educational institutions and maintain strong partnerships.
             </p>
           </div>
+=======
+<section className="py-20 bg-background">
+  <div className="container mx-auto px-4">
+    <div className="text-center mb-16">
+   \   <h2 className="text-4xl font-bold text-foreground mb-6">Partnerships</h2>
+      <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+        We work with leading educational institutions and maintain strong partnerships.
+      </p>
+    </div>
+>>>>>>> 7394909 (Local edits before pulling)
 
           <div className="mb-12 flex flex-wrap items-center justify-center gap-8">
             <Image src="/Partners/anor.jfif" alt="Anor logo" width={120} height={60} className="h-16 w-auto object-contain" />
