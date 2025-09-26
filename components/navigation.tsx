@@ -179,7 +179,7 @@ export default function Navigation() {
 
               <Link
                 href="/teacher-portal"
-                className="block text-sm font-semibold  text-foreground hover:text-primary transition-colors py-2"
+                className="font-semibold  text-foreground hover:text-primary text-sm transition-colors py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Careers
