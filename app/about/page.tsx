@@ -212,68 +212,68 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Partnerships */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-6">Partnerships</h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              We work with leading educational institutions and maintain strong partnerships.
-            </p>
-          </div>
-
-      <section className="py-20 bg-background">
-   <div className="container mx-auto px-4">
+{/* Partnerships */}
+<section className="py-20 bg-background">
+  <div className="container mx-auto px-4">
     <div className="text-center mb-16">
-     <h2 className="text-4xl font-bold text-foreground mb-6">Partnerships</h2>
+      <h2 className="text-4xl font-bold text-foreground mb-6">Partnerships</h2>
       <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
         We work with leading educational institutions and maintain strong partnerships.
       </p>
     </div>
 
-          <div className="mb-12 flex flex-wrap items-center justify-center gap-8">
-            <Image src="/Partners/anor.jfif" alt="Anor logo" width={120} height={60} className="h-16 w-auto object-contain" />
-            <Image src="/Partners/henpro.png" alt="Henpro logo" width={120} height={60} className="h-16 w-auto object-contain" />
-            <Image src="/Partners/vicP.jpg" alt="VicP logo" width={120} height={60} className="h-16 w-auto object-contain" />
-            <Image src="/Partners/rain.jpg" alt="Rain logo" width={120} height={60} className="h-16 w-auto object-contain" />
-            <Image src="/Partners/answ.jpg" alt="Answ logo" width={120} height={60} className="h-16 w-auto object-contain" />
-            <Image src="/Partners/tas.jpg" alt="Tas logo" width={120} height={60} className="h-16 w-auto object-contain" />
-          </div>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+    <div className="mb-12 flex flex-wrap items-center justify-center gap-8">
+      <Image src="/Partners/anor.jfif" alt="Anor logo" width={120} height={60} className="h-16 w-auto object-contain" />
+      <Image src="/Partners/henpro.png" alt="Henpro logo" width={120} height={60} className="h-16 w-auto object-contain" />
+      <Image src="/Partners/atlantic.jpeg" alt="VicP logo" width={120} height={60} className="h-16 w-auto object-contain" />
+      <Image src="/Partners/rain.jpeg" alt="Rain logo" width={120} height={60} className="h-16 w-auto object-contain" />
+      <Image src="/Partners/answ.jpeg" alt="Answ logo" width={120} height={60} className="h-16 w-auto object-contain" />
+      <Image src="/Partners/tas.jpeg" alt="Tas logo" width={120} height={60} className="h-16 w-auto object-contain" />
+      <Image src="/Partners/shaftt.jpeg" alt="VicP logo" width={120} height={60} className="h-16 w-auto object-contain" />
+      <Image src="/Partners/Lakewood.jpeg" alt="Rain logo" width={120} height={60} className="h-16 w-auto object-contain" />
+      <Image src="/Partners/vicp.jpeg" alt="Answ logo" width={120} height={60} className="h-16 w-auto object-contain" />
+      <Image src="/Partners/vich.jpeg" alt="VicP logo" width={120} height={60} className="h-16 w-auto object-contain" />
+      <Image src="/Partners/vit.jpeg" alt="Rain logo" width={120} height={60} className="h-16 w-auto object-contain" />
+      <Image src="/Partners/bui.jpeg" alt="Answ logo" width={120} height={60} className="h-16 w-auto object-contain" />
+      <Image src="/Partners/askills.jpeg" alt="VicP logo" width={120} height={60} className="h-16 w-auto object-contain" />
+      <Image src="/Partners/Allied.jpg" alt="Rain logo" width={120} height={60} className="h-16 w-auto object-contain" />
+    </div>
 
-            <div className="max-w-2xl mx-auto">
-              <Card className="border-2 border-border">
-                <CardHeader>
-                  <div className="w-16 h-16 bg-secondary/10 border border-secondary/20 rounded-lg flex items-center justify-center mb-4">
-                    <Users className="w-8 h-8 text-secondary" />
-                  </div>
-                  <CardTitle className="text-xl font-bold">Strategic Partners</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                      Leading universities and colleges
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                      Technology training providers
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                      Community development organizations
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                      Government education departments
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
+    <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <div className="max-w-2xl mx-auto">
+        <Card className="border-2 border-border">
+          <CardHeader>
+            <div className="w-16 h-16 bg-secondary/10 border border-secondary/20 rounded-lg flex items-center justify-center mb-4">
+              <Users className="w-8 h-8 text-secondary" />
             </div>
-          </div>
-        </div>
-      </section>
+            <CardTitle className="text-xl font-bold">Strategic Partners</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="space-y-3 text-muted-foreground">
+              <li className="flex items-start gap-2">
+                <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                Leading universities and colleges
+              </li>
+              <li className="flex items-start gap-2">
+                <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                Technology training providers
+              </li>
+              <li className="flex items-start gap-2">
+                <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                Community development organizations
+              </li>
+              <li className="flex items-start gap-2">
+                <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                Government education departments
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* CTA Section */}
       <section className="py-20 bg-secondary">

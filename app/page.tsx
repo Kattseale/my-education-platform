@@ -22,7 +22,7 @@ export default function HomePage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/10 to-secondary/10">
+      <section className="py-10 bg-gradient-to-br from-primary/10 to-secondary/10">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-balance mb-8 text-foreground leading-tight">
             Transforming Schools,
@@ -33,27 +33,11 @@ export default function HomePage() {
             structured approach is designed to suit the needs of the current educational landscape while empowering
             prospective educators to achieve their dreams of making a difference in Education.
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Button
-              size="lg"
-              className="bg-stone-800 hover:bg-stone-700 text-white font-semibold px-8 py-4 border border-stone-900"
-            >
-              Get Involved Today
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-8 py-4 bg-transparent"
-            >
-              Learn About Our Programs
-            </Button>
-          </div>
         </div>
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-background">
+      <section className="py-10 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-6">Our Core Services</h2>
