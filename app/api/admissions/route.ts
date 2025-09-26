@@ -8,14 +8,14 @@ export async function POST(request: NextRequest) {
         const body = await request.json()
         const {
             firstName, lastName, idNumber, dateOfBirth, email, phone,
-            gradeApplying, previousSchool, currentGrade, academicYear,
+            gradeApplying, previousSchool, currentGrade, academicYear, preferredSchool,
             parentName, parentEmail, parentPhone, relationship, address,
             specialNeeds, motivation
         } = body
 
         // Validate required fields
         if (!firstName || !lastName || !idNumber || !dateOfBirth || !email || !phone ||
-            !gradeApplying || !academicYear || !parentName || !parentEmail || !parentPhone ||
+            !gradeApplying || !academicYear || !preferredSchool ||!parentName || !parentEmail || !parentPhone ||
             !relationship || !address) {
             return NextResponse.json(
                 { error: 'Missing required fields' },
@@ -41,6 +41,7 @@ export async function POST(request: NextRequest) {
                     previous_school: previousSchool || null,
                     current_grade: currentGrade || null,
                     academic_year: academicYear,
+                    preferred_school: preferredSchool,
 
                     // Parent/Guardian Information
                     parent_name: parentName,

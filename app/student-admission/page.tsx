@@ -34,6 +34,7 @@ export default function StudentAdmissionPage() {
       previousSchool: formData.get('previousSchool') as string,
       currentGrade: formData.get('currentGrade') as string,
       academicYear: academicYear,
+      preferredSchool: formData.get('preferredSchool') as string,
       parentName: formData.get('parentName') as string,
       parentEmail: formData.get('parentEmail') as string,
       parentPhone: formData.get('parentPhone') as string,
@@ -204,6 +205,37 @@ export default function StudentAdmissionPage() {
                           </SelectContent>
                         </Select>
                       </div>
+                      <div className="space-y-2">
+                        <label htmlFor="preferredSchool" className="block mb-2 font-medium text-foreground">
+        Preferred School
+      </label>
+      <select
+        id="preferredSchool"
+        name="preferredSchool"
+        required
+        className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-primary"
+      >
+        <option value="">Select your preferre</option>
+        <option value="Allied School for Boys">Allied School for Boys</option>
+        <option value="Allied School for Girls">Allied School for Girls</option>
+        <option value="Allied School Robertsham">Allied School Robertsham</option>
+        <option value="Allied Castle for Kids">Allied Castle for Kids</option>
+        <option value="An-Noor School for boys">An-Noor School for boys</option>
+        <option value="Answaar Schools">Answaar Schools</option>
+        <option value="Atlantic Schools">Atlantic Schools</option>
+        <option value="Bait-ul-ilm Kidz">Bait-ul-ilm Kidz</option>
+        <option value="Bright Horizon Academy">Bright Horizon Academy</option>
+        <option value="Henpro College">Henpro College</option>
+        <option value="Lakewood International Academy">Lakewood International Academy</option>
+        <option value="Shaft Education Centre">Shaft Education Centre </option>
+        <option value="Tasmiyah Special School Academy">Tasmiyah Special School Academy</option>
+        <option value="Victoria Primary School">Victoria Primary School</option>
+        <option value="Victoria High School">Victoria High School</option>
+        <option value="Rainbow City College">Rainbow City College</option>
+        <option value="Viktoria Institute of Technology">Viktoria Institute of Technology</option>
+      </select>
+      </div>
+
                     </div>
                   </div>
 

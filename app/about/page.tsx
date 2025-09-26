@@ -3,7 +3,7 @@ import Navigation from "@/components/navigation"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { GraduationCap, Users, Heart, Target, Building2, CheckCircle, ArrowRight } from "lucide-react"
-
+import Link from "next/link"
 
 export default function AboutPage() {
   return (
@@ -32,7 +32,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 bg-background">
+      <section className="py-10 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
             <Card className="border-2 border-primary/20 bg-primary/5">
@@ -70,7 +70,7 @@ export default function AboutPage() {
       </section>
 
       {/* What We Do */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-10 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-6">What We Do</h2>
@@ -182,7 +182,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Impact */}
-      <section className="py-20 bg-primary">
+      <section className="py-10 bg-primary">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-primary-foreground mb-6">Our Impact</h2>
@@ -193,19 +193,19 @@ export default function AboutPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary-foreground mb-2">500+</div>
+              <div className="text-4xl font-bold text-primary-foreground mb-2">100+</div>
               <div className="text-primary-foreground/80 font-medium">Educators Trained</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary-foreground mb-2">50+</div>
+              <div className="text-4xl font-bold text-primary-foreground mb-2">30+</div>
               <div className="text-primary-foreground/80 font-medium">Partner Schools</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary-foreground mb-2">1,200+</div>
+              <div className="text-4xl font-bold text-primary-foreground mb-2">500+</div>
               <div className="text-primary-foreground/80 font-medium">Youth Trained in Digital Skills</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary-foreground mb-2">15+</div>
+              <div className="text-4xl font-bold text-primary-foreground mb-2">10+</div>
               <div className="text-primary-foreground/80 font-medium">Years of Experience</div>
             </div>
           </div>
@@ -252,7 +252,7 @@ export default function AboutPage() {
             <ul className="space-y-3 text-muted-foreground">
               <li className="flex items-start gap-2">
                 <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                Leading universities and colleges
+                Leading schools and colleges
               </li>
               <li className="flex items-start gap-2">
                 <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
@@ -284,6 +284,7 @@ export default function AboutPage() {
             with us, there's a place for you in our mission.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <Link href="/contact">
             <Button
               size="lg"
               className="bg-stone-800 hover:bg-stone-700 text-white font-semibold px-8 py-4 border border-stone-900"
@@ -291,13 +292,16 @@ export default function AboutPage() {
               Get Involved Today
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-2 border-secondary-foreground text-secondary-foreground hover:bg-secondary-foreground hover:text-secondary font-semibold px-8 py-4 bg-transparent"
-            >
-              Contact Us
-            </Button>
+            </Link>
+           <Link href="/contact">
+  <Button
+    size="lg"
+    variant="outline"
+    className="border-2 border-secondary-foreground text-secondary-foreground hover:bg-secondary-foreground hover:text-secondary font-semibold px-8 py-4 bg-transparent"
+  >
+    Contact Us
+  </Button>
+</Link>
           </div>
         </div>
       </section>
