@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import Navigation from "@/components/navigation"
+import Link from "next/link"
 import {
   BookOpen,
   Users,
@@ -286,11 +287,11 @@ export default function HomePage() {
             </p>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary-foreground mb-2">500+</div>
+                <div className="text-3xl font-bold text-primary-foreground mb-2">200+</div>
                 <div className="text-primary-foreground/80">Educators Trained</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary-foreground mb-2">50+</div>
+                <div className="text-3xl font-bold text-primary-foreground mb-2">30+</div>
                 <div className="text-primary-foreground/80">Partner Schools</div>
               </div>
               <div className="text-center">
@@ -303,7 +304,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-secondary">
+      <section className="py-17 bg-secondary">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-secondary-foreground mb-8 text-balance">
             Ready to Transform Education?
@@ -313,20 +314,16 @@ export default function HomePage() {
             quality education accessible to all.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Button
-              size="lg"
-              className="bg-stone-800 hover:bg-stone-700 text-white font-semibold px-8 py-4 border border-stone-900"
-            >
-              Become an Educator
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
+
+              <Link href="/contact">
             <Button
               size="lg"
               variant="outline"
               className="border-2 border-secondary-foreground text-secondary-foreground hover:bg-secondary-foreground hover:text-secondary font-semibold px-8 py-4 bg-transparent"
             >
-              Partner With Us
+              Get in Touch
             </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -389,7 +386,7 @@ export default function HomePage() {
 
           <div className="border-t border-border mt-12 pt-8 text-center">
             <p className="text-muted-foreground">
-              © 2024 My Education NPO. All rights reserved. • Empowering Education Across South Africa
+              © 2024 My Education. All rights reserved. • Empowering Education Across South Africa
             </p>
           </div>
         </div>

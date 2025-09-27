@@ -294,14 +294,14 @@ export default function AboutPage() {
             </Button>
             </Link>
            <Link href="/contact">
-  <Button
-    size="lg"
-    variant="outline"
-    className="border-2 border-secondary-foreground text-secondary-foreground hover:bg-secondary-foreground hover:text-secondary font-semibold px-8 py-4 bg-transparent"
-  >
-    Contact Us
-  </Button>
-</Link>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-2 border-secondary-foreground text-secondary-foreground hover:bg-secondary-foreground hover:text-secondary font-semibold px-8 py-4 bg-transparent"
+            >
+              Contact Us
+            </Button>
+            </Link>
           </div>
         </div>
       </section>

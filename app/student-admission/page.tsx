@@ -35,6 +35,7 @@ export default function StudentAdmissionPage() {
       currentGrade: formData.get('currentGrade') as string,
       academicYear: academicYear,
       preferredSchool: formData.get('preferredSchool') as string,
+      accommodationRequired: formData.get('accommodationRequired') as string, 
       parentName: formData.get('parentName') as string,
       parentEmail: formData.get('parentEmail') as string,
       parentPhone: formData.get('parentPhone') as string,
@@ -215,7 +216,7 @@ export default function StudentAdmissionPage() {
         required
         className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-primary"
       >
-        <option value="">Select your preferre</option>
+        <option value="">Select your preferred school</option>
         <option value="Allied School for Boys">Allied School for Boys</option>
         <option value="Allied School for Girls">Allied School for Girls</option>
         <option value="Allied School Robertsham">Allied School Robertsham</option>
@@ -236,6 +237,24 @@ export default function StudentAdmissionPage() {
       </select>
       </div>
 
+                            {/* Accommodation Required */}
+                      <div className="space-y-2">
+                        <label htmlFor="accommodationRequired" className="block mb-2 font-medium text-foreground">
+                          Accommodation required
+                        </label>
+                        <select
+                          id="accommodationRequired"
+                          name="accommodationRequired"
+                          required
+                          className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-primary"
+                        >
+                          <option value="">Select accommodation option</option>
+                          <option value="none">No accommodation required</option>
+                          <option value="on-campus">Yes — On-campus / Boarding</option>
+                          <option value="off-campus">Yes — Off-campus (hostel / private)</option>
+                          <option value="assistance">Yes — Needs special assistance / accessible housing</option>
+                        </select>
+                      </div>
                     </div>
                   </div>
 
@@ -276,67 +295,6 @@ export default function StudentAdmissionPage() {
                     <div className="space-y-2">
                       <Label htmlFor="address">Home Address *</Label>
                       <Textarea id="address" name="address" placeholder="Enter complete home address" required />
-                    </div>
-                  </div>
-
-                  {/* Document Upload */}
-                  <div className="space-y-6">
-                    <h3 className="text-xl font-semibold text-primary border-b border-primary/20 pb-2">
-                      Supporting Documents (Optional)
-                    </h3>
-                    <p className="text-sm text-muted-foreground">
-                      You can upload supporting documents now or submit them later. Documents can be submitted via email after your application is processed.
-                    </p>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <Card className="border-dashed border-2 border-primary/30 hover:border-primary/50 transition-colors">
-                        <CardContent className="p-6 text-center">
-                          <Upload className="w-12 h-12 text-primary mx-auto mb-4" />
-                          <h4 className="font-semibold mb-2">Birth Certificate</h4>
-                          <p className="text-sm text-muted-foreground mb-4">Upload certified copy of birth certificate (optional)</p>
-                          <Button variant="outline" className="w-full bg-transparent">
-                            <FileText className="w-4 h-4 mr-2" />
-                            Choose File
-                          </Button>
-                        </CardContent>
-                      </Card>
-
-                      <Card className="border-dashed border-2 border-primary/30 hover:border-primary/50 transition-colors">
-                        <CardContent className="p-6 text-center">
-                          <Upload className="w-12 h-12 text-primary mx-auto mb-4" />
-                          <h4 className="font-semibold mb-2">Previous School Report</h4>
-                          <p className="text-sm text-muted-foreground mb-4">Upload latest school report (if applicable)</p>
-                          <Button variant="outline" className="w-full bg-transparent">
-                            <FileText className="w-4 h-4 mr-2" />
-                            Choose File
-                          </Button>
-                        </CardContent>
-                      </Card>
-
-                      <Card className="border-dashed border-2 border-primary/30 hover:border-primary/50 transition-colors">
-                        <CardContent className="p-6 text-center">
-                          <Upload className="w-12 h-12 text-primary mx-auto mb-4" />
-                          <h4 className="font-semibold mb-2">ID Copy (Parent/Guardian)</h4>
-                          <p className="text-sm text-muted-foreground mb-4">Upload copy of parent/guardian ID (optional)</p>
-                          <Button variant="outline" className="w-full bg-transparent">
-                            <FileText className="w-4 h-4 mr-2" />
-                            Choose File
-                          </Button>
-                        </CardContent>
-                      </Card>
-
-                      <Card className="border-dashed border-2 border-primary/30 hover:border-primary/50 transition-colors">
-                        <CardContent className="p-6 text-center">
-                          <Upload className="w-12 h-12 text-primary mx-auto mb-4" />
-                          <h4 className="font-semibold mb-2">Proof of Residence</h4>
-                          <p className="text-sm text-muted-foreground mb-4">
-                            Upload recent utility bill or lease agreement (optional)
-                          </p>
-                          <Button variant="outline" className="w-full bg-transparent">
-                            <FileText className="w-4 h-4 mr-2" />
-                            Choose File
-                          </Button>
-                        </CardContent>
-                      </Card>
                     </div>
                   </div>
 
