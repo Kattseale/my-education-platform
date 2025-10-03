@@ -14,14 +14,14 @@ export async function POST(request: NextRequest) {
     // Validate required fields
     if (!firstName || !lastName || !email || !message) {
       return NextResponse.json(
-        { error: 'Missing required fields' },
+        { error: 'Missingcontact_submissions required fields' },
         { status: 400 }
       )
     }
 
     // Insert into Supabase
     const { data, error } = await supabase
-      .from('contact_submissions')
+      .from('')
       .insert([
         {
           first_name: firstName,

@@ -295,7 +295,7 @@ export default function HomePage() {
                 <div className="text-primary-foreground/80">Partner Schools</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary-foreground mb-2">15+</div>
+                <div className="text-3xl font-bold text-primary-foreground mb-2">10+</div>
                 <div className="text-primary-foreground/80">Years Experience</div>
               </div>
             </div>
@@ -377,8 +377,9 @@ export default function HomePage() {
                   <span>info@myeduc.co.za</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <MapPin className="w-4 h-4" />
-                  <span>Johannesburg, South Africa</span>
+                  <MapPin className="w-20 h-6"/>
+                  <span>30 Modulus Road, Ormonde, <br />
+                    Johannesburg, <br /> South Africa</span>
                 </div>
               </div>
             </div>
@@ -386,7 +387,7 @@ export default function HomePage() {
 
           <div className="border-t border-border mt-12 pt-8 text-center">
             <p className="text-muted-foreground">
-              © 2024 My Education. All rights reserved. • Empowering Education Across South Africa
+              © 2024 My Education. All rights reserved.
             </p>
           </div>
         </div>

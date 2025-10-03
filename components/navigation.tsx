@@ -72,7 +72,7 @@ export default function Navigation() {
                 className="font-semibold text-foreground hover:text-primary text-sm transition-colors flex items-center gap-1"
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
               >
-                Programs
+                Admissions
                 <ChevronDown className="w-4 h-4" />
               </button>
               {isServicesOpen && (

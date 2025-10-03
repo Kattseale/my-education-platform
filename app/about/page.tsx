@@ -201,7 +201,7 @@ export default function AboutPage() {
               <div className="text-primary-foreground/80 font-medium">Partner Schools</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary-foreground mb-2">500+</div>
+              <div className="text-4xl font-bold text-primary-foreground mb-2">300+</div>
               <div className="text-primary-foreground/80 font-medium">Youth Trained in Digital Skills</div>
             </div>
             <div className="text-center">

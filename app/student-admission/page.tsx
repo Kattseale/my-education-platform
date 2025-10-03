@@ -182,6 +182,7 @@ export default function StudentAdmissionPage() {
                             <SelectItem value="grade-9">Grade 9</SelectItem>
                             <SelectItem value="grade-10">Grade 10</SelectItem>
                             <SelectItem value="grade-11">Grade 11</SelectItem>
+                            <SelectItem value="grade-11">Grade 12</SelectItem>
                           </SelectContent>
                         </Select>
                       </div>
