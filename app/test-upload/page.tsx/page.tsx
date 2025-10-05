@@ -1,5 +1,6 @@
 "use client"
 import React, { useState } from "react"
+import supabase from '@/lib/supabaseClient';
 
 export default function TeacherApplicationForm() {
   const [message, setMessage] = useState("")

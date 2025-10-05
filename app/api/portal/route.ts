@@ -1,16 +1,20 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 
-// 🚨 Important: this MUST use the service role key (not anon key)
-const supabaseService = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,        // public URL
-  process.env.SUPABASE_SERVICE_ROLE_KEY!        // secret service key
-);
-
 export async function POST(req: NextRequest) {
   try {
-    const formData = await req.formData();
+    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+    const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
+    if (!supabaseUrl || !supabaseKey) {
+      console.error("❌ Missing Supabase environment variables");
+      return NextResponse.json({ error: "Server configuration error" }, { status: 500 });
+    }
+
+    // ✅ Initialize inside the function
+    const supabaseService = createClient(supabaseUrl, supabaseKey);
+
+    const formData = await req.formData();
     const firstName = formData.get("firstName")?.toString() || "";
     const lastName = formData.get("lastName")?.toString() || "";
     const email = formData.get("email")?.toString() || "";
@@ -30,7 +34,6 @@ export async function POST(req: NextRequest) {
     let cvUrl: string | null = null;
 
     if (cv) {
-      // ✅ Restrict file types
       const allowedTypes = [
         "application/pdf",
         "application/msword",
@@ -40,7 +43,6 @@ export async function POST(req: NextRequest) {
         return NextResponse.json({ error: "Invalid file type. Only PDF/DOC/DOCX allowed." }, { status: 400 });
       }
 
-      // ✅ Restrict size (5 MB)
       const maxSize = 5 * 1024 * 1024;
       if (cv.size > maxSize) {
         return NextResponse.json({ error: "File too large. Max 5MB." }, { status: 400 });
@@ -50,7 +52,6 @@ export async function POST(req: NextRequest) {
       const arrayBuffer = await cv.arrayBuffer();
       const blob = new Blob([arrayBuffer], { type: cv.type });
 
-      // ✅ Upload with service key (bypasses RLS)
       const { error: uploadError } = await supabaseService.storage
         .from("cvs")
         .upload(fileName, blob, { cacheControl: "3600", upsert: false });
@@ -66,22 +67,23 @@ export async function POST(req: NextRequest) {
       cvUrl = publicData.publicUrl;
     }
 
-    // ✅ Insert into DB
     const { data, error } = await supabaseService
       .from("teacher_applications")
-      .insert([{
-        first_name: firstName,
-        last_name: lastName,
-        email,
-        phone,
-        location,
-        qualification,
-        experience,
-        subjects,
-        availability,
-        motivation,
-        cv_url: cvUrl,
-      }])
+      .insert([
+        {
+          first_name: firstName,
+          last_name: lastName,
+          email,
+          phone,
+          location,
+          qualification,
+          experience,
+          subjects,
+          availability,
+          motivation,
+          cv_url: cvUrl,
+        },
+      ])
       .select();
 
     if (error) {
@@ -92,6 +94,12 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ success: true, data });
   } catch (err) {
     console.error("Unexpected server error:", err);
-    return NextResponse.json({ error: "Unexpected server error", details: String(err) }, { status: 500 });
+    return NextResponse.json(
+      { error: "Unexpected server error", details: String(err) },
+      { status: 500 }
+    );
   }
+}
+
+export async function GET(req: NextRequest) {
 }
