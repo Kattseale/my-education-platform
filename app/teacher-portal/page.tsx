@@ -22,8 +22,6 @@ import Navigation from "@/components/navigation"
 import { Upload, FileText, CheckCircle, User, GraduationCap, Briefcase, MapPin, Clock, ArrowRight } from "lucide-react"
 
 
-
-
 interface Vacancy {
     id: string;
     title: string;
@@ -37,9 +35,76 @@ interface Vacancy {
 }
  
 
-const mockVacancies: Vacancy[] = [ { id: "1", title: "Primary School Teacher - Grade 3", location: "Johannesburg Central", type: "Full-time", department: "Primary Education", experience: "2-3 years", description: "We are seeking a passionate and dedicated Grade 3 teacher to join our dynamic team. The successful candidate will be responsible for creating engaging lesson plans and fostering a positive learning environment.", requirements: [ "Bachelor's degree in Education or relevant field", "SACE registration", "2+ years teaching experience", "Strong classroom management skills", "Proficiency in English and Afrikaans", ], posted: "2 days ago", }, { id: "2", title: "Mathematics Teacher - High School", location: "Cape Town", type: "Full-time", department: "Secondary Education", experience: "3-5 years", description: "Join our mathematics department and inspire students to excel in mathematics. We offer excellent professional development opportunities and a supportive work environment.", requirements: [ "Bachelor's degree in Mathematics or Education", "SACE registration", "3+ years high school teaching experience", "Strong mathematical knowledge", "Experience with digital learning tools", ], posted: "1 week ago", }, { id: "3", title: "School Principal", location: "Durban", type: "Full-time", department: "Leadership", experience: "8+ years", description: "Lead our school community towards excellence. We are looking for an experienced educational leader with a vision for transformative education.", requirements: [ "Master's degree in Education Leadership", "SACE registration", "8+ years leadership experience", "Strong communication skills", "Experience in school management", ], posted: "3 days ago", }, { id: "4", title: "Early Childhood Development Practitioner", location: "Pretoria", type: "Part-time", department: "Early Childhood", experience: "1-2 years", description: "Work with young learners in our Grade R program. Perfect opportunity for someone passionate about early childhood development.", requirements: [ "NQF Level 4 ECD qualification", "SACE registration", "1+ years ECD experience", "Patience and creativity", "First Aid certification preferred", ], posted: "5 days ago", }, ]
-
-
+const mockVacancies: Vacancy[] = [
+  {
+    id: "1",
+    title: "Primary School Teacher - Grade 3",
+    location: "Allied School for Boys, Fordsburg",
+    type: "Full-time",
+    department: "Primary Education",
+    experience: "2-3 years",
+    description:
+      "We are seeking a passionate and dedicated Grade 3 teacher to join our dynamic team. The successful candidate will be responsible for creating engaging lesson plans and fostering a positive learning environment.",
+    requirements: [
+      "Bachelor's degree in Education or relevant field",
+      "SACE registration",
+      "2+ years teaching experience",
+      "Strong classroom management skills",
+      "Proficiency in English and Afrikaans",
+    ],
+    posted: "2 days ago",
+  },
+  {
+    id: "2",
+    title: "Mathematics Teacher - High School",
+    location: "Allied School, Robertsham",
+    type: "Full-time",
+    department: "Secondary Education",
+    experience: "3-5 years",
+    description:
+      "Join our mathematics department and inspire students to excel in mathematics. We offer excellent professional development opportunities and a supportive work environment.",
+    requirements: [
+      "Bachelor's degree in Mathematics or Education",
+      "SACE registration",
+      "3+ years high school teaching experience",
+      "Strong mathematical knowledge",
+      "Experience with digital learning tools",
+    ],
+    posted: "1 week ago",
+  },
+  {
+    id: "3",
+    title: "Technology Teacher - Grade 7",
+    location: "Lakewood International School",
+    type: "Full-time",
+    department: "Leadership",
+    experience: "1+ years",
+    description:
+      "Lead our school community towards excellence. We are looking for an experienced educational leader with a vision for transformative education.",
+    requirements: [
+      "Master's degree in Education Leadership",
+      "SACE registration",
+      "8+ years leadership experience",
+      "Strong communication skills",
+      "Experience in school management",
+    ],
+    posted: "3 days ago",
+  },
+  {
+    id: "4",
+    title: "Cleaner",
+    location: "Allied Skills Academy, Fordsburg",
+    type: "Part-time",
+    department: "Early Childhood",
+    experience: "No experience required",
+    description:
+      "Making sure our facilities are clean.",
+    requirements: [
+      "No experience needed",
+    ],
+    posted: "5 days ago",
+  },
+]
 
 export default function TeacherPortal() {
   const [formData, setFormData] = useState({
@@ -196,26 +261,27 @@ export default function TeacherPortal() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="grid md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
+                  <div className="bg-white border border-green-300 text-gray-800 rounded-lg px-3 py-2 focus:border-green-600 focus:ring-2 focus:ring-green-500 outline-none">
+
                     <Label htmlFor="firstName">First Name *</Label>
                     <Input id="firstName" value={formData.firstName} onChange={e => handleInputChange("firstName", e.target.value)} required />
                   </div>
-                  <div className="space-y-2">
+                  <div className="bg-white border border-green-300 text-gray-800 rounded-lg px-3 py-2 focus:border-green-600 focus:ring-2 focus:ring-green-500 outline-none">
                     <Label htmlFor="lastName">Last Name *</Label>
                     <Input id="lastName" value={formData.lastName} onChange={e => handleInputChange("lastName", e.target.value)} required />
                   </div>
                 </div>
                 <div className="grid md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
+                  <div className="bg-white border border-green-300 text-gray-800 rounded-lg px-3 py-2 focus:border-green-600 focus:ring-2 focus:ring-green-500 outline-none">
                     <Label htmlFor="email">Email *</Label>
                     <Input id="email" type="email" value={formData.email} onChange={e => handleInputChange("email", e.target.value)} required />
                   </div>
-                  <div className="space-y-2">
+                  <div className="bg-white border border-green-300 text-gray-800 rounded-lg px-3 py-2 focus:border-green-600 focus:ring-2 focus:ring-green-500 outline-none">
                     <Label htmlFor="phone">Phone *</Label>
                     <Input id="phone" type="tel" value={formData.phone} onChange={e => handleInputChange("phone", e.target.value)} required />
                   </div>
                 </div>
-                <div className="space-y-2">
+                <div className="bg-white border border-green-300 text-gray-800 rounded-lg px-3 py-2 focus:border-green-600 focus:ring-2 focus:ring-green-500 outline-none">
                   <Label htmlFor="location">Location *</Label>
                   <Input id="location" value={formData.location} onChange={e => handleInputChange("location", e.target.value)} required />
                 </div>
@@ -262,7 +328,7 @@ export default function TeacherPortal() {
                     </SelectContent>
                   </Select>
                 </div>
-                <div className="space-y-2">
+                <div className="bg-white border border-green-300 text-gray-800 rounded-lg px-3 py-2 focus:border-green-600 focus:ring-2 focus:ring-green-500 outline-none">
                   <Label htmlFor="subjects">Preferred Subjects</Label>
                   <Input id="subjects" value={formData.subjects} onChange={e => handleInputChange("subjects", e.target.value)} />
                 </div>
@@ -307,7 +373,8 @@ export default function TeacherPortal() {
                 <CardTitle>Why do you want to teach?</CardTitle>
               </CardHeader>
               <CardContent>
-                <Textarea value={formData.motivation} onChange={e => handleInputChange("motivation", e.target.value)} required />
+                <Textarea value={formData.motivation} onChange={e => handleInputChange("motivation", e.target.value)} required 
+                className="border-2 border-green-500 bg-white text-gray-900 rounded-lg focus:ring-2 focus:ring-green-600 focus:border-green-600 min-h-[150px] shadow-sm"/>
               </CardContent>
             </Card>
 

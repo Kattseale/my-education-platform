@@ -110,24 +110,24 @@ export default function ContactPage() {
                 ) : (
                   <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid md:grid-cols-2 gap-4">
-                      <div className="space-y-2">
+                      <div className="bg-white border border-green-300 text-gray-800 rounded-lg px-3 py-2 focus:border-green-600 focus:ring-2 focus:ring-green-500 outline-none">
                         <Label htmlFor="firstName">First Name</Label>
                         <Input id="firstName" name="firstName" placeholder="Enter your first name" required />
                       </div>
-                      <div className="space-y-2">
+                      <div className="bg-white border border-green-300 text-gray-800 rounded-lg px-3 py-2 focus:border-green-600 focus:ring-2 focus:ring-green-500 outline-none">
                         <Label htmlFor="lastName">Last Name</Label>
                         <Input id="lastName" name="lastName" placeholder="Enter your last name" required />
                       </div>
                     </div>
-                    <div className="space-y-2">
+                    <div className="bg-white border border-green-300 text-gray-800 rounded-lg px-3 py-2 focus:border-green-600 focus:ring-2 focus:ring-green-500 outline-none">
                       <Label htmlFor="email">Email Address</Label>
                       <Input id="email" name="email" type="email" placeholder="Enter your email address" required />
                     </div>
-                    <div className="space-y-2">
+                    <div className="bg-white border border-green-300 text-gray-800 rounded-lg px-3 py-2 focus:border-green-600 focus:ring-2 focus:ring-green-500 outline-none">
                       <Label htmlFor="phone">Phone Number</Label>
                       <Input id="phone" name="phone" type="tel" placeholder="Enter your phone number" />
                     </div>
-                    <div className="space-y-2">
+                    <div className="bg-white border border-green-300 text-gray-800 rounded-lg px-3 py-2 focus:border-green-600 focus:ring-2 focus:ring-green-500 outline-none">
                       <Label>Area of Interest</Label>
                       <div className="space-y-2">
                         <label className="flex items-center space-x-2 cursor-pointer">
@@ -160,7 +160,7 @@ export default function ContactPage() {
                         </label>
                       </div>
                     </div>
-                    <div className="space-y-2">
+                    <div className="bg-white border border-green-300 text-gray-800 rounded-lg px-3 py-2 focus:border-green-600 focus:ring-2 focus:ring-green-500 outline-none">
                       <Label htmlFor="message">Message</Label>
                       <Textarea
                         id="message"
@@ -217,7 +217,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Address</h3>
-                      <p className="text-muted-foreground">Corner Central Road and Lilian Ngoyi Street</p>
+                      <p className="text-muted-foreground">30 Modulus Road, Ormonde</p>
                       <p className="text-muted-foreground">Johannesburg, 2092</p>
                       <p className="text-muted-foreground">South Africa</p>
                     </div>
