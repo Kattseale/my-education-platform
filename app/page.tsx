@@ -237,13 +237,6 @@ export default function HomePage() {
                 </ul>
               </CardContent>
             </Card>
-
-            <Card className="border-2 border-border hover:shadow-lg transition-all duration-300">
-              <CardContent>
-                <ul className="text-sm text-muted-foreground space-y-2 leading-relaxed">
-                </ul>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
@@ -349,12 +342,12 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="w-4 h-4" />
-                  <span>info@myeduc.co.za</span>
+                  <span>careers@myeduc.co.za</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <MapPin className="w-20 h-6"/>
-                  <span>30 Modulus Road, Ormonde, <br />
-                    Johannesburg, <br /> South Africa</span>
+                <div className="flex items-center 2">
+                  <MapPin className="w-8 h-5"/>
+                  <span>30 Modulus Road, Ormonde, Johannesburg, South Africa
+                  </span>
                 </div>
               </div>
             </div>

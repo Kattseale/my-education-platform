@@ -101,7 +101,7 @@ export default function Navigation() {
 
             <Link
               href="/teacher-portal"
-              className="block px-4 py-3 font-semibold border-1 rounded-lg text-sm text-foreground hover:bg-muted hover:text-primary transition-colors"
+              className="font-semibold text-sm text-foreground hover:text-primary transition-colors"
             >
               Careers
             </Link>

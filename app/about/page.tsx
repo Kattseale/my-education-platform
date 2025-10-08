@@ -285,7 +285,7 @@ export default function AboutPage() {
             with us, there's a place for you in our mission.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Link href="/contact">
+            <Link href="/get-involved">
             <Button
               size="lg"
               className="bg-stone-800 hover:bg-stone-700 text-white font-semibold px-8 py-4 border border-stone-900"

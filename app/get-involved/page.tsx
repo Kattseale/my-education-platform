@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { GraduationCap, Users, Heart, Building2, CheckCircle, Mail, Phone } from "lucide-react"
+import Link from "next/link"
 
 export default function GetInvolvedPage() {
   return (
@@ -119,37 +120,38 @@ export default function GetInvolvedPage() {
                 <div className="w-16 h-16 bg-accent/10 border border-accent/20 rounded-lg flex items-center justify-center mb-4">
                   <Heart className="w-8 h-8 text-accent" />
                 </div>
-                <CardTitle className="text-xl font-bold">Volunteer</CardTitle>
+                <CardTitle className="text-xl font-bold">Donate & Support</CardTitle>
                 <CardDescription>
-                  Share your skills and expertise to support our programs and initiatives
+                  Support our mission through financial contributions and resource donations
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-muted-foreground mb-6">
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                    Mentoring aspiring educators
+                    Monthly giving programs
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                    Skills-based volunteering
+                    Equipment and resource donations
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                    Event support and coordination
+                    Scholarship fund contributions
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                    Community outreach programs
+                    Program-specific funding
                   </li>
                 </ul>
-                <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
-                onClick={() => window.location.href = "/contact"}>
-                Volunteer Today
+                <Button 
+                  className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
+                  onClick={() => window.location.href = "/donate"}
+                >
+                  Make a Donation
                 </Button>
               </CardContent>
             </Card>
-
             <Card className="border-2 border-border hover:shadow-lg transition-all duration-300">
               <CardHeader>
                 <div className="w-16 h-16 bg-primary/10 border border-primary/20 rounded-lg flex items-center justify-center mb-4">
@@ -184,7 +186,6 @@ export default function GetInvolvedPage() {
                 </Button>
               </CardContent>
             </Card>
-
             <Card className="border-2 border-border hover:shadow-lg transition-all duration-300">
               <CardHeader>
                 <div className="w-16 h-16 bg-secondary/10 border border-secondary/20 rounded-lg flex items-center justify-center mb-4">
@@ -223,35 +224,33 @@ export default function GetInvolvedPage() {
                 <div className="w-16 h-16 bg-accent/10 border border-accent/20 rounded-lg flex items-center justify-center mb-4">
                   <Heart className="w-8 h-8 text-accent" />
                 </div>
-                <CardTitle className="text-xl font-bold">Donate & Support</CardTitle>
+                <CardTitle className="text-xl font-bold">Volunteer</CardTitle>
                 <CardDescription>
-                  Support our mission through financial contributions and resource donations
+                  Share your skills and expertise to support our programs and initiatives
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-muted-foreground mb-6">
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                    Monthly giving programs
+                    Mentoring aspiring educators
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                    Equipment and resource donations
+                    Skills-based volunteering
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                    Scholarship fund contributions
+                    Event support and coordination
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                    Program-specific funding
+                    Community outreach programs
                   </li>
                 </ul>
-                <Button 
-                  className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
-                  onClick={() => window.location.href = "/donate"}
-                >
-                  Make a Donation
+                <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
+                onClick={() => window.location.href = "/contact"}>
+                Volunteer Today
                 </Button>
               </CardContent>
             </Card>
@@ -268,10 +267,13 @@ export default function GetInvolvedPage() {
             education.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <Link href="/contact">
             <Button size="lg" className="bg-background text-foreground hover:bg-background/90 font-semibold px-8 py-4">
               <Mail className="mr-2 w-5 h-5" />
               Email Us
             </Button>
+            </Link>
+            <Link href="/contact">
             <Button
               size="lg"
               variant="outline"
@@ -280,6 +282,7 @@ export default function GetInvolvedPage() {
               <Phone className="mr-2 w-5 h-5" />
               Call Us
             </Button>
+            </Link>
           </div>
         </div>
       </section>
