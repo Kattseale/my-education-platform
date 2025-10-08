@@ -74,7 +74,7 @@ export default function HomePage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                    Senior phase (Grade 7-11)
+                    Senior phase (Grade 7-12)
                   </li>
                 </ul>
               </CardContent>
@@ -239,33 +239,8 @@ export default function HomePage() {
             </Card>
 
             <Card className="border-2 border-border hover:shadow-lg transition-all duration-300">
-              <CardHeader>
-                <div className="w-16 h-16 bg-accent/10 border border-accent/20 rounded-lg flex items-center justify-center mb-4">
-                  <Building2 className="w-8 h-8 text-accent" />
-                </div>
-                <CardTitle className="text-card-foreground font-bold text-xl">School Management</CardTitle>
-                <CardDescription className="text-muted-foreground">
-                  Comprehensive school operations and franchise services
-                </CardDescription>
-              </CardHeader>
               <CardContent>
                 <ul className="text-sm text-muted-foreground space-y-2 leading-relaxed">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                    School acquisition and sales
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                    Operational management
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                    Quality assurance programs
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                    Franchise development
-                  </li>
                 </ul>
               </CardContent>
             </Card>

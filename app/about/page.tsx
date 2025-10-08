@@ -44,9 +44,10 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground leading-relaxed">
-                  To empower schools with the tools, training, and guidance they need to deliver exceptional educational
-                  experiences. By partnering with schools, educators, and communities, we aim to expand access to
-                  quality education, support sustainable growth, and ensure every learner has the opportunity to thrive.
+                  My Education offers a variety of services within the education sector. Our experienced team provides programmes and activities designed to enrich school heads and owners 
+                  with practical knowledge and strategies of achieving sustainable and inclusive economic growth.
+                  We are committed to providing investment opportunities for individuals who are passionate about education - 
+                  providing lifelong learning both local and at International levels by collaborating with partner schools and Skills providers.
                 </p>
               </CardContent>
             </Card>

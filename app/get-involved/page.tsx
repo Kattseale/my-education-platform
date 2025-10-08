@@ -1,3 +1,5 @@
+"use client";
+
 import Navigation from "@/components/navigation"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -66,7 +68,12 @@ export default function GetInvolvedPage() {
                     Ongoing professional development
                   </li>
                 </ul>
-                <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">Apply Now</Button>
+                <Button
+                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                  onClick={() => window.location.href = "/teacher-portal"}>
+                  Apply Now
+                </Button>
+
               </CardContent>
             </Card>
 
@@ -99,7 +106,9 @@ export default function GetInvolvedPage() {
                     Resource sharing network
                   </li>
                 </ul>
-                <Button className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground">
+                <Button 
+                  className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground"
+                  onClick={() => window.location.href = "/contact"}>
                   Partner With Us
                 </Button>
               </CardContent>
@@ -134,7 +143,10 @@ export default function GetInvolvedPage() {
                     Community outreach programs
                   </li>
                 </ul>
-                <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">Volunteer Today</Button>
+                <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
+                onClick={() => window.location.href = "/contact"}>
+                Volunteer Today
+                </Button>
               </CardContent>
             </Card>
 
@@ -235,7 +247,12 @@ export default function GetInvolvedPage() {
                     Program-specific funding
                   </li>
                 </ul>
-                <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">Make a Donation</Button>
+                <Button 
+                  className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
+                  onClick={() => window.location.href = "/donate"}
+                >
+                  Make a Donation
+                </Button>
               </CardContent>
             </Card>
           </div>
